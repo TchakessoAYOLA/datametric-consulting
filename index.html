@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataMetric Consulting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9ece7; /* Couleur de fond correspondant à la couleur de fond du logo */
+        }
+        header {
+            background-color: #8b4a32; /* Couleur marron foncé */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a05a4e; /* Couleur marron plus clair */
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        section {
+            margin: 2rem 0;
+        }
+        h2 {
+            color: #8b4a32; /* Couleur marron foncé */
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .services, .case-studies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service, .case-study {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+            flex: 1 1 calc(30% - 2rem);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            background-color: #8b4a32; /* Couleur marron foncé */
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logoDataMetric.jpeg" alt="Logo de DataMetric Consulting">
+    <h1>DataMetric Consulting</h1>
+</header>
+
+<nav>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#case-studies">Études de cas</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p><strong>Bienvenue chez DataMetric Consulting, votre partenaire de confiance en analyse financière et statistique avancée.</strong></p>
+        <p>Chez DataMetric Consulting, nous offrons une gamme complète de services d'analyse financière et statistique pour aider les étudiants, chercheurs, et professionnels à obtenir des insights précieux sur les marchés et à prendre des décisions éclairées. Récemment, nous avons collaboré avec un étudiant en fin de formation de master pour son projet de recherche sur l'impact des victoires des équipes de Formule 1 sur les rendements boursiers de leurs sponsors. Cette expérience illustre parfaitement la valeur ajoutée que nous apportons à nos clients.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Analyses de Marché</h3>
+                <p>Études de marché détaillées et prévisions économiques pour aider les entreprises à comprendre les tendances du marché et à planifier leurs stratégies.</p>
+            </div>
+            <div class="service">
+                <h3>Analyse de Performance d'Actifs</h3>
+                <p>Évaluation des rendements et des risques des portefeuilles d'investissement pour optimiser la performance financière.</p>
+            </div>
+            <div class="service">
+                <h3>Études Événementielles</h3>
+                <p>Analyse de l'impact des événements spécifiques (comme les victoires sportives ou les annonces économiques) sur les performances financières des entreprises.</p>
+            </div>
+            <div class="service">
+                <h3>Enquêtes et Sondages</h3>
+                <p>Conception de questionnaires, collecte de données, analyse des résultats et rapport détaillé pour fournir des insights sur le comportement et les préférences des consommateurs.</p>
+            </div>
+            <div class="service">
+                <h3>Branding Growth</h3>
+                <p>Stratégies de croissance de marque basées sur des analyses de données pour augmenter la visibilité et l'engagement des clients.</p>
+            </div>
+            <div class="service">
+                <h3>Solutions Informatiques</h3>
+                <p>Développement de logiciels et d'applications personnalisées pour automatiser et améliorer les processus d'analyse de données et de reporting.</p>
+            </div>
+            <div class="service">
+                <h3>Formation et Conseil</h3>
+                <p>Ateliers de formation et conseils personnalisés en analyse financière et statistique pour développer les compétences et les connaissances de vos équipes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies">
+        <h2>Études de Cas</h2>
+        <div class="case-studies">
+            <div class="case-study">
+                <h3>Analyse de l'Impact des Victoires de Formule 1</h3>
+                <p>Dans le cadre de ce projet, nous avons mené une analyse approfondie pour déterminer si les victoires des équipes de Formule 1 influencent significativement les rendements boursiers de leurs sponsors. Nous avons utilisé des techniques avancées d'analyse statistique, incluant le calcul des rendements anormaux et l'application de tests de Wilcoxon, pour fournir des conclusions robustes et fiables.</p>
+                <h4>Méthodologie Employée :</h4>
+                <ul>
+                    <li><strong>Préparation des Données :</strong> Intégration des données de rendements journaliers des actions de Mercedes AMG et Petronas, ainsi que des indices de référence DAX Automobile et Bursa Malaysia.</li>
+                    <li><strong>Période d'Estimation :</strong> Utilisation d'une période d'estimation de 60 jours pour calculer les paramètres alpha et beta via une régression linéaire.</li>
+                    <li><strong>Calcul des Rendements Anormaux :</strong> Détermination des rendements anormaux avant et après les victoires.</li>
+                    <li><strong>Test de Wilcoxon :</strong> Comparaison des rendements anormaux avant et après les victoires pour évaluer la signification statistique.</li>
+                </ul>
+                <h4>Résultats Obtenus :</h4>
+                <ul>
+                    <li><strong>Mercedes AMG :</strong> Les victoires ont un impact significatif et négatif sur les rendements boursiers, indiquant une baisse des rendements après les victoires.</li>
+                    <li><strong>Petronas :</strong> Les victoires n'ont pas d'impact significatif sur les rendements boursiers, montrant des rendements similaires avant et après les victoires.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="contact" class="contact">
+    <h2>Contactez-Nous</h2>
+    <p>Nous invitons tous les étudiants, chercheurs, professionnels et entreprises à découvrir comment nos services peuvent enrichir leurs projets et améliorer leurs décisions financières. Pour en savoir plus, contactez-nous dès aujourd'hui et explorons ensemble les opportunités d'une collaboration fructueuse.</p>
+    <p><strong>DataMetric Consulting</strong></p>
+    <p><strong>Adresse :</strong> Tosti, non loin de la maison de Adébayor</p>
+    <p><strong>Téléphone :</strong> +22890114448/+22899959022</p>
+    <p><strong>Email :</strong> komi.ayola@outlook.fr</p>
+    <p><strong>Site Web :</strong> [URL du site web]</p>
+</section>
+
+</body>
+</html>
